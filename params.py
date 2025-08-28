@@ -2,16 +2,11 @@ import argparse
 
 def parse_arguments():
     parser = argparse.ArgumentParser()
-    # parser.add_argument("--data_path", type=str, required=True)
-    # parser.add_argument("--image_size", type=int, required=True)
-    # parser.add_argument("--n_epoch", type=int, required=True)
-    # parser.add_argument("--n_T", type=int, required=True)
-    # parser.add_argument("--batch_size", type=int, required=True)
-    parser.add_argument("--data_path", type=str, default='/home/hcn98/polyp_diffusion/Kvasir-SEG/mask/')
-    parser.add_argument("--image_size", type=int, default=256)
-    parser.add_argument("--n_epoch", type=int, default=1)
-    parser.add_argument("--n_T", type=int, default=1)
-    parser.add_argument("--batch_size", type=int, default=1)
+    parser.add_argument("--data_path", type=str, required=True)
+    parser.add_argument("--image_size", type=int, required=True)
+    parser.add_argument("--n_epoch", type=int, required=True)
+    parser.add_argument("--n_T", type=int, required=True)
+    parser.add_argument("--batch_size", type=int, required=True)
 
     parser.add_argument("--norm", type=str, default="")
     parser.add_argument("--st", type=int, default=100)
